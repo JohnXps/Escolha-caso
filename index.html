@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo Geek</title>
+</head>
+
+<body>
+    <h1>Horóscopo</h1>
+    <div class="itens">
+
+        <input type="text" id="signos">
+        <button onclick="escolhaSigno()">Buscar</button>
+        <div id="imgagem">
+            <img id="img" src="img/imgcap.png" width="200px" height="200px" alt="">
+        </div>
+        <div id="frase"></div>
+
+    </div>
+
+
+    <footer>
+            <a href="https://instagram.com/john__xps?igshid=ZDdkNTZiNTM=">@john__xps</a> | johnsnow.playstation@gmail.com 
+    </footer>
+
+
+    <script>
+        function escolhaSigno() {
+            var imagem = document.getElementById("img")
+            var texto
+            var signo = document.querySelector("#signos").value
+            // value = garantir que sera vista como valor
+            switch (signo) {
+                case "Áries":
+                    texto = "Arianos são ou não os maiores esquentadinhos do zodíaco? Eles têm a cabeça quente e sua energia é incendiária, assim como a de Johnny Storm, a identidade do Tocha Humano. A personalidade desse herói pode ser definida por sua confiança em si mesmo, sua impetuosidade e sua coragem que não conhece limites. Lembra ou não a descrição de um nativo de Áries? "
+                    imagem.src = "/img/img1.png"
+                    img.width = 450
+                    img.height = 500
+                    break
+                    // break parar por aí
+
+                case "áries":
+                    texto = "Arianos são ou não os maiores esquentadinhos do zodíaco? Eles têm a cabeça quente e sua energia é incendiária, assim como a de Johnny Storm, a identidade do Tocha Humano. A personalidade desse herói pode ser definida por sua confiança em si mesmo, sua impetuosidade e sua coragem que não conhece limites. Lembra ou não a descrição de um nativo de Áries? "
+                    imagem.src = "/img/img1.png"
+                    img.width = 450
+                    img.height = 500
+                    break
+                
+                // break parar por aí
+
+                case "Touro":
+                    texto = "Os taurinos são do signo mais seguro do zodíaco e tem tudo a ver com o mais famoso dos super-heróis: confiável, persistente, fiel aos seus ideais e extremamente justo. Como Clark Kent ou em seus trajes de Super-Homem, ele é muito pacífico, talvez o mais tranquilo dos heróis, mas não hesita em brigar para proteger os mais fracos. A cara dos nativos de Touro. "
+                    imagem.src = "/img/img2.png"
+                    img.width = 450
+                    img.height = 500
+                    break
+
+                case "touro":
+                    texto = "Os taurinos são do signo mais seguro do zodíaco e tem tudo a ver com o mais famoso dos super-heróis: confiável, persistente, fiel aos seus ideais e extremamente justo. Como Clark Kent ou em seus trajes de Super-Homem, ele é muito pacífico, talvez o mais tranquilo dos heróis, mas não hesita em brigar para proteger os mais fracos. A cara dos nativos de Touro. "
+                    imagem.src = "/img/img2.png"
+                    img.width = 450
+                    img.height = 500
+                    break
+
+
+                case "Gêmeos":
+                    texto = "Os inconstantes geminianos têm um espírito jovem. Um pouco como o Homem-Aranha, o herói adolescente e, talvez, o que mais se divide entre suas identidades. Peter Parker é tímido, desajustado, um pouco para baixo. Como Homem-Aranha não se torna apenas mais forte, mas também muito mais desinibido. Até, Nova York, a cidade do Homem-Aranha, tem tudo a ver com os geminianos."
+                    imagem.src = "/img/img3.png"
+                    img.width = 550
+                    img.height = 600
+                    break
+
+                case "gêmeos":
+                    texto = "Os inconstantes geminianos têm um espírito jovem. Um pouco como o Homem-Aranha, o herói adolescente e, talvez, o que mais se divide entre suas identidades. Peter Parker é tímido, desajustado, um pouco para baixo. Como Homem-Aranha não se torna apenas mais forte, mas também muito mais desinibido. Até, Nova York, a cidade do Homem-Aranha, tem tudo a ver com os geminianos."
+                    imagem.src = "/img/img3.png"
+                    img.width = 550
+                    img.height = 600
+                    break
+
+
+                case "Câncer":
+                    texto = "Com o signo mais família do zodíaco, os nativos de Câncer parecem ter um sexto sentido para compreender o que suas pessoas queridas estão sentindo. Quase como a telepatia do Professor X. A mesma forma que o mutante com seus X-Men, eles sempre têm alguém para cuidar, seja sua família de sangue ou de coração, os cancerianos sempre os colocam em primeiro lugar. "
+                    imagem.src = "/img/img4.png"
+                    img.width = 650
+                    img.height = 600
+                    break
+
+                case "câncer":
+                    texto = "Com o signo mais família do zodíaco, os nativos de Câncer parecem ter um sexto sentido para compreender o que suas pessoas queridas estão sentindo. Quase como a telepatia do Professor X. A mesma forma que o mutante com seus X-Men, eles sempre têm alguém para cuidar, seja sua família de sangue ou de coração, os cancerianos sempre os colocam em primeiro lugar. "
+                    imagem.src = "/img/img4.png"
+                    img.width = 650
+                    img.height = 600
+                    break
+
+
+                case "Leão":
+                    texto = "Os leoninos sempre estão no centro do palco. Assim como Tony Stark, que nem hesitou em revelar ao mundo sua identidade secreta. O playboy, inteligente e cheio de charme, não está contente em ser um super-herói, quer também que o mundo inteiro saiba seu nome. Do alto da Torre Stark, ele comanda sua empresa e salva o mundo. É um líder nato, assim como os leoninos. "
+                    imagem.src = "/img/img5.png"
+                    img.width = 450
+                    img.height = 500
+                    break
+
+                case "leão":
+                    texto = "Os leoninos sempre estão no centro do palco. Assim como Tony Stark, que nem hesitou em revelar ao mundo sua identidade secreta. O playboy, inteligente e cheio de charme, não está contente em ser um super-herói, quer também que o mundo inteiro saiba seu nome. Do alto da Torre Stark, ele comanda sua empresa e salva o mundo. É um líder nato, assim como os leoninos. "
+                    imagem.src = "/img/img5.png"
+                    img.width = 450
+                    img.height = 500
+                    break
+
+
+                case "Virgem":
+                    texto = "Práticos, perfeccionistas e sempre preocupados para que tudo funcione da maneira certa, os virginianos são a cara do Capitão América! O primeiro Vingador é uma síntese dos ideais de um super-herói. Ele é quase perfeito, assim como todo virginiano almeja ser. E assim como o herói, os nativos de Virgem precisam tomar cuidado para que sua mania de controle não lhes torne mal-humorados."
+                    imagem.src = "/img/img6.png"
+                    img.width = 550
+                    img.height = 650
+                    break
+
+                case "virgem":
+                    texto = "Práticos, perfeccionistas e sempre preocupados para que tudo funcione da maneira certa, os virginianos são a cara do Capitão América! O primeiro Vingador é uma síntese dos ideais de um super-herói. Ele é quase perfeito, assim como todo virginiano almeja ser. E assim como o herói, os nativos de Virgem precisam tomar cuidado para que sua mania de controle não lhes torne mal-humorados."
+                    imagem.src = "/img/img6.png"
+                    img.width = 550
+                    img.height = 650
+                    break
+
+
+
+                case "Libra":
+                    texto = "Os grandes diplomatas do zodíaco, librianos são como a Mulher-Maravilha. Com seu laço da verdade a heroína amazona veio a Terra para defender a paz e a justiça. Charmosos e idealistas, os nativos de Libra, assim como Diane Prince, chamam a atenção por onde passam e, podem não serem os líderes de seus grupos, mas certamente são os que chamam mais atenção."
+                    imagem.src = "/img/img7.png"
+                    img.width = 450
+                    img.height = 600
+                    break
+
+                case "libra":
+                    texto = "Os grandes diplomatas do zodíaco, librianos são como a Mulher-Maravilha. Com seu laço da verdade a heroína amazona veio a Terra para defender a paz e a justiça. Charmosos e idealistas, os nativos de Libra, assim como Diane Prince, chamam a atenção por onde passam e, podem não serem os líderes de seus grupos, mas certamente são os que chamam mais atenção."
+                    imagem.src = "/img/img7.png"
+                    img.width = 450
+                    img.height = 600
+                    break
+
+
+                case "Escorpião":
+                    texto = "Os escorpianos são misteriosos, amam as sombras e nunca revelam muito sobre si. Assim como Batman, um dos mais ambíguo super-herói. Como o milionário Bruce Wayne, sabe tudo sobre sua cidade e é muito intenso com seus sentimentos. Como o Cavaleiro das Sombras, são magnéticos e obstinados, mas também costumam fazer inimigos mais facilmente do que gostariam."
+                    imagem.src = "/img/img8.png"
+                    img.width = 550
+                    img.height = 600
+                    break
+
+                case "escorpião":
+                    texto = "Os escorpianos são misteriosos, amam as sombras e nunca revelam muito sobre si. Assim como Batman, um dos mais ambíguo super-herói. Como o milionário Bruce Wayne, sabe tudo sobre sua cidade e é muito intenso com seus sentimentos. Como o Cavaleiro das Sombras, são magnéticos e obstinados, mas também costumam fazer inimigos mais facilmente do que gostariam."
+                    imagem.src = "/img/img8.png"
+                    img.width = 550
+                    img.height = 600
+                    break
+
+
+                case "Sagitário":
+                    texto = "Aventureiros e sempre em movimento, os sagitarianos são como Thor, que sempre está viajando entre Asgard, o reino dos deuses nórdicos e Midgard, o nosso mundo. O deus do trovão é bem-humorado, adora uma briga e é o mais despreocupado dos super-heróis, assim como os nativos de Sagitário, que são os desapegados do zodíaco. Com sua coragem, os sagitarianos, assim como Thor, estão sempre em busca de aventuras."
+                    imagem.src = "/img/img9.png"
+                    img.width = 580
+                    img.height = 600
+                    break
+
+                case "sagitário":
+                    texto = "Aventureiros e sempre em movimento, os sagitarianos são como Thor, que sempre está viajando entre Asgard, o reino dos deuses nórdicos e Midgard, o nosso mundo. O deus do trovão é bem-humorado, adora uma briga e é o mais despreocupado dos super-heróis, assim como os nativos de Sagitário, que são os desapegados do zodíaco. Com sua coragem, os sagitarianos, assim como Thor, estão sempre em busca de aventuras."
+                    imagem.src = "/img/img9.png"
+                    img.width = 580
+                    img.height = 600
+                    break
+
+
+                case "Capricórnio":
+                    texto = "Os workaholics(padrão caracterológico de alto envolvimento com trabalho que é dirigido por compulsões internas e resulta em baixo nível de prazer profissional) do zodíaco, capricornianos são extremamente responsáveis e disciplinados. Assim como Matt Murdoch. O advogado que à noite assume a identidade do vigilante Demolidor é um tanto sério e, embora dê suas escapadas românticas, está sempre pensando em trabalho e pode ser solitário, da mesma forma que os capricornianos, que precisam ser lembrados que a vida também pede boas doses de diversão."
+                    imagem.src = "/img/img10.png"
+                    img.width = 480
+                    img.height = 600
+                    break
+
+                case "capricórnio":
+                    texto = "Os workaholics(padrão caracterológico de alto envolvimento com trabalho que é dirigido por compulsões internas e resulta em baixo nível de prazer profissional) do zodíaco, capricornianos são extremamente responsáveis e disciplinados. Assim como Matt Murdoch. O advogado que à noite assume a identidade do vigilante Demolidor é um tanto sério e, embora dê suas escapadas românticas, está sempre pensando em trabalho e pode ser solitário, da mesma forma que os capricornianos, que precisam ser lembrados que a vida também pede boas doses de diversão."
+                    imagem.src = "/img/img10.png"
+                    img.width = 480
+                    img.height = 600
+                    break
+
+
+                case "Aquário":
+                    texto = "Os aquarianos não são muito ligados ao aqui e agora. São viajantes que, se possível, cruzariam o espaço e o tempo em busca de novidades. Da mesma forma que o Surfista Prateado, que precisa apenas de sua prancha para viajar para galáxias distantes. O mais moderninho dos super-heróis, ele se redimiu de seus crimes do passado e agora quer apenas o bem para todos. Assim como os aquarianos, que, mesmo desligados, são muito bondosos."
+                    imagem.src = "/img/img11.png"
+                    img.width = 480
+                    img.height = 600
+                    break
+
+                case "aquário":
+                    texto = "Os aquarianos não são muito ligados ao aqui e agora. São viajantes que, se possível, cruzariam o espaço e o tempo em busca de novidades. Da mesma forma que o Surfista Prateado, que precisa apenas de sua prancha para viajar para galáxias distantes. O mais moderninho dos super-heróis, ele se redimiu de seus crimes do passado e agora quer apenas o bem para todos. Assim como os aquarianos, que, mesmo desligados, são muito bondosos."
+                    imagem.src = "/img/img11.png"
+                    img.width = 480
+                    img.height = 600
+                    break
+
+
+                case "Peixes":
+                    texto = "Sonhadores, os piscianos tendem a ter tanta vontade de salvar o mundo que acabam imaginando uma realidade melhor, que existe apenas em sua mente. De forma semelhante, o invencível Dr. Manhattan vive tomado de melancolia, pois preocupa-se constantemente com todos, mas sua ligação com o universo acaba desconectando-o das outras pessoas. É um lembrete aos piscianos, que não podem viver apenas em seu próprio mundo."
+                    imagem.src = "/img/img12.png"
+                    img.width = 450
+                    img.height = 700
+                    break
+
+                case "peixes":
+                    texto = "Sonhadores, os piscianos tendem a ter tanta vontade de salvar o mundo que acabam imaginando uma realidade melhor, que existe apenas em sua mente. De forma semelhante, o invencível Dr. Manhattan vive tomado de melancolia, pois preocupa-se constantemente com todos, mas sua ligação com o universo acaba desconectando-o das outras pessoas. É um lembrete aos piscianos, que não podem viver apenas em seu próprio mundo."
+                    imagem.src = "/img/img12.png"
+                    img.width = 450
+                    img.height = 700
+                    break
+
+                default:
+                    texto = "Insira um signo existente"
+
+
+
+
+
+
+
+            }
+
+            document.getElementById("frase").innerHTML = texto
+
+
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>
